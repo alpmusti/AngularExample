@@ -1,0 +1,13 @@
+.routerText{
+    text-align: center;
+    margin : 0 auto;
+    color:#333;
+    font-size: 18px;
+    margin-top:35px;
+}
+.routerText a{
+    text-decoration: none;
+    padding: 12px 20px;
+    color:white;
+    background-color: #1abc9c;
+}

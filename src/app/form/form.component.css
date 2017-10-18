@@ -1,0 +1,33 @@
+.form-group{
+    padding: 6px 12px;
+    margin : 3px;
+    width:50%;
+    font-size: 14px;
+}
+.language{
+    padding : 6px 12px;
+    width:55%;
+    margin:10px;
+    font-size: 14px;
+}
+.btn-submit{
+    margin:15px;
+    padding :16px 24px;
+    background-color : #628297;
+    color: white;
+    cursor: pointer;
+    border:none;
+    font-weight: 100;
+    font-size: 14px;
+}
+.main{  
+    border : 1px solid #ccc;   
+}
+
+input[type='submit']:hover{
+    background-color: #b0dcff;
+}
+
+input[type='submit']:disabled{
+    background-color: #d5d6d6;
+}

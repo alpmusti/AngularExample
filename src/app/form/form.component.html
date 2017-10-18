@@ -1,0 +1,33 @@
+<!-- Model Driven -->
+  <div class="main">
+  <h1>Form example</h1>
+  <form class="container" 
+  [formGroup]= "form"
+  (ngSubmit) = "onSubmit(form.value)">
+    <input class="form-group" name="firstname" type="text" placeholder="Name" formControlName="firstname" /><br/>
+    <input class="form-group" type="text" name="lastname" placeholder="Surname" formControlName="lastname" /><br/>
+    <select class="language" ngModel formControlName="language">
+      <option value="angular">Angular</option>
+      <option value="c++">C++</option>
+      <option value="java">Java</option>
+    </select><br/>
+    <input type="submit" [disabled]="!form.valid" value="Submit" class="btn-submit" />
+  </form>
+</div>
+
+<!-- Template Driven -->
+<!--<div class="main">
+  <h1>Form example</h1>
+  <form class="container" 
+  #userForm = "ngForm"
+  (ngSubmit) = "onSubmit(userForm.value)">
+    <input class="form-group" name="firstname" type="text" placeholder="Name" ngModel /><br/>
+    <input class="form-group" type="text" name="lastname" placeholder="Surname" ngModel /><br/>
+    <select class="language" ngModel name="language">
+      <option value="angular">Angular</option>
+      <option value="c++">C++</option>
+      <option value="java">Java</option>
+    </select><br/>
+    <input type="submit" value="Submit" class="btn-submit" />
+  </form>
+</div>-->

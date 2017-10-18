@@ -1,0 +1,10 @@
+<form class="container" 
+[formGroup]= "form"
+(ngSubmit) = "onSubmit(form.value)">
+  <h1>Base Converter</h1>
+  <input type="text" name="decimal" placeholder="decimal" (ngModelChange)= "decimalChanged(oldValue , newValue = $event)" formControlName="decimal"  /><br/>
+  <input type="text" name="binary" placeholder="binary" (ngModelChange)= "binaryChanged(oldValue , newValue = $event)" formControlName="binary" /><br/>
+  <input type="text" name="octal" placeholder="octal" (ngModelChange)= "octalChanged(oldValue , newValue = $event)" formControlName="octal" /><br/>
+  <input type="text" name="hexa" placeholder="hexa" (ngModelChange)= "hexaChanged(oldValue , newValue = $event)" formControlName="hexa" /><br/>
+  <input type="submit" value="Submit" />
+</form>

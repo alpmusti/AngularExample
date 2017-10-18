@@ -1,0 +1,16 @@
+li{
+    background-color:transparent;
+    border:none;
+    color:white;
+    border-bottom : 1px solid #ccc;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+h1{
+    background-color : #d7d7d7;
+    color : #616161;
+}
+.main{
+    border:none;
+    background-color : #628297;
+}
